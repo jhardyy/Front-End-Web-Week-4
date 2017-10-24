@@ -27,9 +27,9 @@ main {
 section {
   font-size: 1em;
   background: #888;
-  width: 22%;
+  width: 100%;
   margin: 1em 1% 1em 1%;
-  display: inline-block;
+  display: block;
 }
 section:hover {
   background: #666;
@@ -46,6 +46,13 @@ section:hover {
 	body {
 		background: #f00;
 	}
+	section {
+		width: 44%;
+		display: inline-block;
+	}
+	
+		
+		
   /* 
     - applies to screens larger than 499px (unless specifically overwritten these styles will also apply to screens larger than 999px)
     - add any hover states here
@@ -63,11 +70,17 @@ section:hover {
 	body {
 		background: #0f0;
 	}
+	section {
+		width: 22%;	
+	}
+	
+}
+	
   /*
     - applies to screens larger than 999px only
     - add a max-width to your main section
     - further decrease size of sections
     - increase size of headings and global fonts
   */
-}
+
 /* END SECOND BREAKPOINT */
